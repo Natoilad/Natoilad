@@ -9,12 +9,12 @@ function createMarkupImg(item) {
   return galleryItems.reduce(
     (acc, { preview, original, description }) =>
       acc +
-      `<div class="gallery"></div>
+      `
       <div class="gallery__item">
       <a class="gallery__link" href="${original}">
         <img class="gallery_image" src="${preview}" alt="${description}" data-source="${original}">
       </a>
-    </div>`,
+    </div> `,
     ""
   );
 }
